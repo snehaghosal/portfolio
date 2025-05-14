@@ -106,10 +106,10 @@ export default function Home() {
               <motion.a
                 variants={fadeInUp}
                 whileHover={{ scale: 1.2, rotate: 5 }}
-                href="tel:+919831179013"
+
                 className="text-blue-500 hover:text-purple-500 transition-colors"
               >
-                <Phone size={24} />
+                
               </motion.a>
               <motion.a
                 variants={fadeInUp}
@@ -598,9 +598,7 @@ export default function Home() {
                     <div className="w-10 h-10 rounded-full bg-purple-100 flex items-center justify-center mr-4">
                       <Phone className="text-purple-600" size={20} />
                     </div>
-                    <a href="tel:+919831179013" className="text-gray-600 hover:text-purple-600 transition-colors">
-                      +91 9831179013
-                    </a>
+                    
                   </motion.div>
 
                   <motion.div variants={fadeInUp} whileHover={{ x: 5 }} className="flex items-center">
