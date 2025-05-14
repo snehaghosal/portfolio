@@ -92,9 +92,13 @@ export default function Home() {
                   Get In Touch
                 </Button>
               </a>
-            </motion.div>
-
-            <motion.div variants={staggerContainer} initial="hidden" animate="visible" className="flex gap-6 mt-8">
+              </motion.div> 
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ delay: 1.0, duration: 0.8 }}
+              className="flex gap-6 mt-6"
+            >
               <motion.a
                 variants={fadeInUp}
                 whileHover={{ scale: 1.2, rotate: 5 }}
@@ -103,14 +107,7 @@ export default function Home() {
               >
                 <Mail size={24} />
               </motion.a>
-              <motion.a
-                variants={fadeInUp}
-                whileHover={{ scale: 1.2, rotate: 5 }}
 
-                className="text-blue-500 hover:text-purple-500 transition-colors"
-              >
-                
-              </motion.a>
               <motion.a
                 variants={fadeInUp}
                 whileHover={{ scale: 1.2, rotate: 5 }}
@@ -121,6 +118,7 @@ export default function Home() {
               >
                 <Linkedin size={24} />
               </motion.a>
+
               <motion.a
                 variants={fadeInUp}
                 whileHover={{ scale: 1.2, rotate: 5 }}
@@ -132,7 +130,12 @@ export default function Home() {
                 <Github size={24} />
               </motion.a>
             </motion.div>
-          </motion.div>
+             </motion.div>
+
+            
+          
+
+
 
           <motion.div
             initial={{ opacity: 0, y: 50 }}
@@ -463,20 +466,20 @@ export default function Home() {
           >
             <motion.div variants={fadeInUp}>
               <ProjectCard
-                title="Predictive Analytics Dashboard"
-                description="Built a dashboard that forecasts business metrics using historical data. Implemented time series models and visualized predictions for better business decision-making."
-                technologies={["Python", "Pandas", "Scikit-learn", "Plotly"]}
-                githubLink="https://github.com/snehaghosal/predictive-analytics"
+                title="Youtube Clone"
+                description="Developed a YouTube clone with responsive UI and video playback layout. Recreated key interface features including sidebar, video grid, and search bar"
+                technologies={["HTML", "CSS"]}
+                githubLink="https://github.com/snehaghosal/Youtube-Clone"
                 color="blue"
               />
             </motion.div>
 
             <motion.div variants={fadeInUp}>
               <ProjectCard
-                title="Document Summarization Tool"
-                description="Developed an application that automatically creates concise summaries of long documents or articles using NLP techniques, improving information processing efficiency."
-                technologies={["Python", "NLTK", "Transformers", "Flask"]}
-                githubLink="https://github.com/snehaghosal/document-summarizer"
+                title="Object Detection System"
+                description="Built a real-time object detection application using a pre-trained MobileNet SSD model. Captured video from a webcam, processed frames with OpenCV, and displayed detected objects with bounding boxes and confidence scores."
+                technologies={["Python", "OpenCV", "NumPy"]}
+                githubLink="https://github.com/snehaghosal/Object-Detector"
                 color="purple"
               />
             </motion.div>
@@ -567,13 +570,13 @@ export default function Home() {
           <div className="max-w-5xl mx-auto">
             <div className="bg-white p-10 rounded-2xl shadow-xl">
               <h2 className="text-4xl font-bold mb-8 text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-purple-600">
-                Need to Get in Touch?
+                Need to know me better?
               </h2>
               <p className="text-gray-600 mb-10 text-lg">
                 I'm currently looking for new opportunities and would love to hear from you!
               </p>
 
-              <motion.div
+              {/* <motion.div
                 variants={staggerContainer}
                 initial="hidden"
                 whileInView="visible"
@@ -629,7 +632,58 @@ export default function Home() {
                     </a>
                   </motion.div>
                 </div>
+              </motion.div> */}
+              <motion.div
+            variants={staggerContainer}
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, amount: 0.1 }}
+            className="max-w-3xl mx-auto"
+          >
+            <h3 className="font-bold text-xl mb-6 text-blue-600">Contact Information</h3>
+            <div className="space-y-5">
+              <motion.div variants={fadeInUp} whileHover={{ x: 5 }} className="flex items-center">
+                <div className="w-10 h-10 rounded-full bg-blue-100 flex items-center justify-center mr-4">
+                  <Mail className="text-blue-600" size={20} />
+                </div>
+                <a
+                  href="mailto:snehaghosal2004@gmail.com"
+                  className="text-gray-600 hover:text-blue-600 transition-colors"
+                >
+                  snehaghosal2004@gmail.com
+                </a>
               </motion.div>
+
+              <motion.div variants={fadeInUp} whileHover={{ x: 5 }} className="flex items-center">
+                <div className="w-10 h-10 rounded-full bg-blue-100 flex items-center justify-center mr-4">
+                  <Linkedin className="text-blue-600" size={20} />
+                </div>
+                <a
+                  href="https://www.linkedin.com/in/sneha-ghosal-669819267"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-gray-600 hover:text-blue-600 transition-colors"
+                >
+                  linkedin.com/in/sneha-ghosal-669819267
+                </a>
+              </motion.div>
+
+              <motion.div variants={fadeInUp} whileHover={{ x: 5 }} className="flex items-center">
+                <div className="w-10 h-10 rounded-full bg-purple-100 flex items-center justify-center mr-4">
+                  <Github className="text-purple-600" size={20} />
+                </div>
+                <a
+                  href="https://github.com/snehaghosal"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-gray-600 hover:text-purple-600 transition-colors"
+                >
+                  github.com/snehaghosal
+                </a>
+              </motion.div>
+            </div>
+          </motion.div>
+
             </div>
           </div>
         </div>
