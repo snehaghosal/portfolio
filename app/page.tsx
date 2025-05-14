@@ -494,7 +494,7 @@ export default function Home() {
             <motion.div variants={fadeInUp}>
               <ProjectCard
                 title="Textbox Chat Application"
-                description="Developed a real-time chat application using Java Swing for the GUI and Java Sockets for network communication. Implemented features like private messaging, group chats, and file sharing."
+                description="Developed a real-time chat application using Java Swing for the GUI and Java Sockets for network communication. Implemented groupchat texting offline."
                 technologies={["Java", "Swing", "Sockets", "Multithreading"]}
                 githubLink="https://github.com/snehaghosal/textbox"
                 color="purple"
