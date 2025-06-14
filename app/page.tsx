@@ -227,13 +227,14 @@ export default function Home() {
           >
             <h3 className="text-2xl font-bold text-blue-700">Kalinga Institute of Industrial Technology</h3>
             <p className="text-purple-500 font-medium">BTech in Computer Science (2022-2026)</p>
-            <p className="mt-2 text-gray-600">GPA: 7.3</p>
+            <p className="mt-2 text-gray-600">GPA: 7.49</p>
 
             <div className="mt-6">
               <h4 className="font-semibold text-blue-600">Relevant Coursework:</h4>
               <p className="text-gray-600 mt-2">
                 Computer Architecture, Object Oriented Programming (Java), Data Structures and Algorithms, Database
-                Management System, Computer Networks, Software Engineering, Design and Analysis of Algorithms
+                Management System, Computer Networks, Software Engineering, Design and Analysis of Algorithms, Machine Learning,
+                Artificial Intelligence, Cloud Computing, Operating Systems
               </p>
             </div>
           </motion.div>
@@ -436,7 +437,7 @@ export default function Home() {
 
           <div className="max-w-4xl mx-auto">
             <ExperienceCard
-              title="Python Developer Intern"
+              title="Data Analyst Intern"
               company="Indxo"
               period="2025"
               description={[
@@ -467,7 +468,7 @@ export default function Home() {
             <motion.div variants={fadeInUp}>
               <ProjectCard
                 title="Youtube Clone"
-                description="Developed a YouTube clone with responsive UI and video playback layout. Recreated key interface features including sidebar, video grid, and search bar"
+                description="Developed a YouTube clone with responsive UI and video playback layout. Recreated key interface features including sidebar, video grid, and search bar."
                 technologies={["HTML", "CSS"]}
                 githubLink="https://github.com/snehaghosal/Youtube-Clone"
                 color="blue"
@@ -576,63 +577,7 @@ export default function Home() {
                 I'm currently looking for new opportunities and would love to hear from you!
               </p>
 
-              {/* <motion.div
-                variants={staggerContainer}
-                initial="hidden"
-                whileInView="visible"
-                viewport={{ once: true, amount: 0.1 }}
-                className="max-w-3xl mx-auto"
-              >
-                <h3 className="font-bold text-xl mb-6 text-blue-600">Contact Information</h3>
-                <div className="space-y-5">
-                  <motion.div variants={fadeInUp} whileHover={{ x: 5 }} className="flex items-center">
-                    <div className="w-10 h-10 rounded-full bg-blue-100 flex items-center justify-center mr-4">
-                      <Mail className="text-blue-600" size={20} />
-                    </div>
-                    <a
-                      href="mailto:snehaghosal2004@gmail.com"
-                      className="text-gray-600 hover:text-blue-600 transition-colors"
-                    >
-                      snehaghosal2004@gmail.com
-                    </a>
-                  </motion.div>
-
-                  <motion.div variants={fadeInUp} whileHover={{ x: 5 }} className="flex items-center">
-                    <div className="w-10 h-10 rounded-full bg-purple-100 flex items-center justify-center mr-4">
-                      <Phone className="text-purple-600" size={20} />
-                    </div>
-                    
-                  </motion.div>
-
-                  <motion.div variants={fadeInUp} whileHover={{ x: 5 }} className="flex items-center">
-                    <div className="w-10 h-10 rounded-full bg-blue-100 flex items-center justify-center mr-4">
-                      <Linkedin className="text-blue-600" size={20} />
-                    </div>
-                    <a
-                      href="https://www.linkedin.com/in/sneha-ghosal-669819267"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="text-gray-600 hover:text-blue-600 transition-colors"
-                    >
-                      linkedin.com/in/sneha-ghosal-669819267
-                    </a>
-                  </motion.div>
-
-                  <motion.div variants={fadeInUp} whileHover={{ x: 5 }} className="flex items-center">
-                    <div className="w-10 h-10 rounded-full bg-purple-100 flex items-center justify-center mr-4">
-                      <Github className="text-purple-600" size={20} />
-                    </div>
-                    <a
-                      href="https://github.com/snehaghosal"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="text-gray-600 hover:text-purple-600 transition-colors"
-                    >
-                      github.com/snehaghosal
-                    </a>
-                  </motion.div>
-                </div>
-              </motion.div> */}
+              
               <motion.div
             variants={staggerContainer}
             initial="hidden"
