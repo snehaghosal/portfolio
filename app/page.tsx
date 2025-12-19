@@ -434,21 +434,35 @@ export default function Home() {
           <h2 className="text-4xl font-bold text-center mb-16 text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-purple-600">
             Internships
           </h2>
-
           <div className="max-w-4xl mx-auto">
-            <ExperienceCard
-              title="Data Analyst Intern"
-              company="Indxo"
-              period="2025"
-              description={[
-                "Developed and maintained Python applications for data processing and analysis.",
-                "Collaborated with the development team to implement new features and fix bugs.",
-                "Gained hands-on experience with Python libraries for data science and machine learning.",
-              ]}
-              color="purple"
-            />
-          </div>
+          <ExperienceCard
+            title="Data Analyst Intern"
+            company="Indxo"
+            period="2025"
+            description={[
+              "Developed and maintained Python applications for data processing and analysis.",
+              "Collaborated with the development team to implement new features and fix bugs.",
+              "Gained hands-on experience with Python libraries for data science and machine learning.",
+            ]}
+            color="purple"
+          />
+
+          <ExperienceCard
+            title="Software Engineer Trainee"
+            company="Capgemini"
+            period="Dec 2025 – Present"
+            description={[
+              "Undergoing structured corporate training in SQL, Java, and Python.",
+              "Working on hands-on assignments to strengthen backend development and database concepts.",
+              "Gaining exposure to industry-standard software development practices.",
+            ]}
+            color="blue"
+          />
         </div>
+
+
+        
+          </div>
       </AnimatedSection>
 
       {/* Projects Section */}
